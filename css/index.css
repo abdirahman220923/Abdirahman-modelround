@@ -1,0 +1,91 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #FF6347; /* Couleur de fond de l'en-tête (coral) */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Conteneur du menu circulaire */
+nav {
+    position: relative; /* Position relative pour le positionnement des éléments enfants */
+    width: 220px; /* Largeur du conteneur */
+    height: 220px; /* Hauteur du conteneur */
+    margin: 20px auto; /* Centrage du conteneur */
+    border-radius: 50%; /* Forme circulaire */
+    overflow: hidden; /* Cache les débordements */
+}
+
+/* Style de la liste du menu */
+.menu {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+    position: absolute; /* Position absolue pour le positionnement précis */
+    top: 30%; /* Position verticale */
+    left: 30%; /* Position horizontale */
+    transform: translate(-20%, -20%); /* Centrage du menu */
+}
+
+/* Style des éléments du menu */
+.menu li {
+    position: absolute; /* Position absolue pour le positionnement précis */
+    width: 100px; /* Largeur de chaque élément */
+    height: 100px; /* Hauteur de chaque élément */
+    text-align: center; /* Centrage du texte horizontalement */
+    line-height: 100px; /* Centrage du texte verticalement */
+    border-radius: 50%; /* Forme circulaire pour chaque élément */
+    transition: transform 0.3s; /* Animation au survol */
+}
+
+/* Style des liens dans le menu */
+.menu li a {
+    display: block; /* Le lien prend toute la place de l'élément */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    width: 100%; /* Largeur maximale */
+}
+
+/* Positionnement et couleur du premier élément du menu */
+.menu li:nth-child(1) {
+    transform: rotate(0deg) translate(80px) rotate(0deg); /* Rotation et translation */
+    background-color: #FF8C42; /* Couleur de fond (tangerine) */
+}
+
+/* Positionnement et couleur du deuxième élément du menu */
+.menu li:nth-child(2) {
+    transform: rotate(72deg) translate(80px) rotate(-72deg); /* Rotation et translation */
+    background-color: #42FF8C; /* Couleur de fond (mint green) */
+}
+
+/* Positionnement et couleur du troisième élément du menu */
+.menu li:nth-child(3) {
+    transform: rotate(144deg) translate(80px) rotate(-144deg); /* Rotation et translation */
+    background-color: #428CFF; /* Couleur de fond (sky blue) */
+}
+
+/* Positionnement et couleur du quatrième élément du menu */
+.menu li:nth-child(4) {
+    transform: rotate(216deg) translate(80px) rotate(-216deg); /* Rotation et translation */
+    background-color: #FFD700; /* Couleur de fond (gold) */
+}
+
+/* Positionnement et couleur du cinquième élément du menu */
+.menu li:nth-child(5) {
+    transform: rotate(288deg) translate(80px) rotate(-288deg); /* Rotation et translation */
+    background-color: #FF42A1; /* Couleur de fond (pink) */
+}
+
+/* Effet de survol sur les éléments du menu */
+.menu li:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'élément */
+    z-index: 1; /* Met l'élément au premier plan */
+}
